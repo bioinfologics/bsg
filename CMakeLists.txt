@@ -176,6 +176,7 @@ SET(header_files
     src/sdglib/datastores/LongReadsDatastore.hpp
     src/sdglib/datastores/KmerCounter.hpp
         src/sdglib/datastores/ReadSequenceBuffer.hpp
+        src/sdglib/factories/Kmers.h
     src/sdglib/mappers/LongReadsMapper.hpp
     src/sdglib/mappers/LinkedReadsMapper.hpp
     src/sdglib/mappers/PairedReadsMapper.hpp
@@ -259,6 +260,8 @@ add_executable(sdg-mapper
 
 add_executable(sdg-dbg
         src/sdg-dbg.cc)
+
+add_executable(kmertester src/kmers_tester.cpp)
 
 target_link_libraries(sdg-workspace sdg_static)
 target_link_libraries(sdg-datastore sdg_static)
