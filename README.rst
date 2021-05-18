@@ -54,7 +54,7 @@ The master branch is undergoing migration to a new pybind interface and further 
 
 .. code-block:: bash
 
-    git pull https://github.com/bioinfologics/sdg
+    git clone https://github.com/bioinfologics/sdg
     cd sdg
     mkdir build
     cd build
